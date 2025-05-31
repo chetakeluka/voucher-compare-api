@@ -56,9 +56,18 @@ async function getLastPageNumber(page) {
 
 async function scrapeAmazonWithPuppeteer() {
   const browser = await puppeteer.launch({
-    headless: true,
-    args: ["--no-sandbox", "--disable-setuid-sandbox"]
-  });
+  headless: true, // Or 'new'
+  executablePath: process.env.PUPPETEER_EXECUTABLE_PATH, // Let Puppeteer find its downloaded browser
+  args: [
+    "--no-sandbox",
+    "--disable-setuid-sandbox",
+    "--disable-dev-shm-usage", // Very important
+    "--disable-accelerated-2d-canvas",
+    "--no-first-run",
+    "--no-zygote",
+    "--disable-gpu"
+  ]
+});
 
   const page = await browser.newPage();
   await page.setUserAgent("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36");
