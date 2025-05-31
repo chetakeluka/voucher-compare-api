@@ -70,7 +70,7 @@ function normalizeString(str) {
     return str.toLowerCase().replace(/[^a-z0-9\s]/gi, ''); // remove punctuation
 }
 
-function getBestDiscount(data, searchName, minScoreThreshold = 50) {
+function getBestDiscount(data, searchName, minScoreThreshold = 25) {
     if (!data || data.length === 0) {
         return "Info: No data provided to search.";
     }
