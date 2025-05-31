@@ -1,0 +1,1650 @@
+[
+    {
+        "name": "Absolute Barbecues E-Gift Card",
+        "discount_pct": 8.5,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/Absolute-Barbecues-E-Gift-Card.svg",
+        "url": "https://www.maximize.money/gift-cards/Absolute Barbecues/388",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Aeropostale",
+        "discount_pct": 8.5,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v2/Aeropostale+E-Gift+Card.svg",
+        "url": "https://www.maximize.money/gift-cards/Aeropostale/200",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Air India E-Gift Card",
+        "discount_pct": 4.5,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v2/Air+India+E-Gift+Card.svg",
+        "url": "https://www.maximize.money/gift-cards/Air India/409",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "AJIO E-Gift Card",
+        "discount_pct": 7,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v2/AjioGC.svg",
+        "url": "https://www.maximize.money/gift-cards/Ajio/416",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "ALDO",
+        "discount_pct": 11.75,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/Aldo.svg",
+        "url": "https://www.maximize.money/gift-cards/ALDO/308",
+        "InStock": false,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Allen Solly E-Gift Card",
+        "discount_pct": 7.5,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v2/Allen+Solly+E-Gift+Voucher%C2%A0.svg",
+        "url": "https://www.maximize.money/gift-cards/Allen Solly/199",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Amazon Fresh Voucher",
+        "discount_pct": 1.75,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v2/amazon+fresh.svg",
+        "url": "https://www.maximize.money/gift-cards/Amazon/94",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Amazon Pay E-Gift Card",
+        "discount_pct": 0,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v2/amazonPayGC.svg",
+        "url": "https://www.maximize.money/gift-cards/Amazon/98",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Amazon Shopping Voucher",
+        "discount_pct": 2,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v2/ASVGC.svg",
+        "url": "https://www.maximize.money/gift-cards/Amazon/25",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "American Tourister",
+        "discount_pct": 6,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/American-Tourister.svg",
+        "url": "https://www.maximize.money/gift-cards/American Tourister/235",
+        "InStock": false,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Apollo Pharmacy Gift Voucher",
+        "discount_pct": 10.5,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v2/ApolloPharmacyGC.svg",
+        "url": "https://www.maximize.money/gift-cards/Apollo/27",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "ARCHIES GALLERY",
+        "discount_pct": 16.5,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/Archies-Gallery.svg",
+        "url": "https://www.maximize.money/gift-cards/ARCHIES GALLERY/236",
+        "InStock": false,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Assembly",
+        "discount_pct": 15.75,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/Assembly.svg",
+        "url": "https://www.maximize.money/gift-cards/Assembly/258",
+        "InStock": false,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Aurelia",
+        "discount_pct": 10.75,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/TCNS-Aurelia-eGift-Cards.svg",
+        "url": "https://www.maximize.money/gift-cards/Aurelia/259",
+        "InStock": false,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Barbeque Nation",
+        "discount_pct": 8.25,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v2/BarbequeGC.svg",
+        "url": "https://www.maximize.money/gift-cards/Barbeque Nation/215",
+        "InStock": false,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "BATH & BODY WORKS",
+        "discount_pct": 11.75,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/Bath-%26-Body-Works.svg",
+        "url": "https://www.maximize.money/gift-cards/BATH & BODY WORKS/309",
+        "InStock": false,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "BEVERLY HILLS POLO CLUB",
+        "discount_pct": 11.75,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/Beverly-Hills-Polo-Club.svg",
+        "url": "https://www.maximize.money/gift-cards/BEVERLY HILLS POLO CLUB/311",
+        "InStock": false,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Bigbasket E-Gift Card",
+        "discount_pct": 4.55,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v2/BigbasketGC.svg",
+        "url": "https://www.maximize.money/gift-cards/Bigbasket/342",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Bikanervala E-Gift Card",
+        "discount_pct": 13.25,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/Bikanervala-E-Gift-Card.svg",
+        "url": "https://www.maximize.money/gift-cards/Bikanervala/368",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Birkenstock E-Gift Card",
+        "discount_pct": 10.25,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/Birkenstock-E-Gift-Card.svg",
+        "url": "https://www.maximize.money/gift-cards/Birkenstock/369",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "BIRYANI BY KILO E-Gift Voucher",
+        "discount_pct": 16,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/BIRYANI-BY-KILO-E-Gift-Voucher.svg",
+        "url": "https://www.maximize.money/gift-cards/BIRYANI BY KILO/370",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Blackberry E-Gift Card",
+        "discount_pct": 10.25,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/Blackberry-E-Gift-Card.svg",
+        "url": "https://www.maximize.money/gift-cards/Blackberry/333",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "BlissClub E-Gift Card",
+        "discount_pct": 10.25,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/BlissClub-E-Gift-Card.svg",
+        "url": "https://www.maximize.money/gift-cards/BlissClub/334",
+        "InStock": false,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Blue Tokai Coffee Gift Card",
+        "discount_pct": 14,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v2/Blue+Tokai+E-Gift+Card.svg",
+        "url": "https://www.maximize.money/gift-cards/Blue Tokai Coffee/71",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "BlueStone Diamond E-Gift Cards",
+        "discount_pct": 3.25,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/BlueStone-Diamond-E-Gift-Cards.svg",
+        "url": "https://www.maximize.money/gift-cards/BlueStone Diamond/371",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Bluestone E-Gift Cards",
+        "discount_pct": 2.25,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v2/BluestoneGC.svg",
+        "url": "https://www.maximize.money/gift-cards/Bluestone/32",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Bluestone Gemstone Studded E-Gift Card",
+        "discount_pct": 3.25,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/Bluestone-Gemstone-Studded-E-Gift-Card.svg",
+        "url": "https://www.maximize.money/gift-cards/Bluestone Gemstone Studded/372",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "BlueStone Gold E-Gift Cards",
+        "discount_pct": 1.25,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/BlueStone-Gold-E-Gift-Cards.svg",
+        "url": "https://www.maximize.money/gift-cards/BlueStone Gold/373",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Body Craft E-Gift Card",
+        "discount_pct": 6.75,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/Body-Craft-E-Gift-Card.svg",
+        "url": "https://www.maximize.money/gift-cards/Body Craft/374",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "BOMBAY SHAVING COMPANY",
+        "discount_pct": 22.75,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/Bombay-Shaving-Company.svg",
+        "url": "https://www.maximize.money/gift-cards/BOMBAY SHAVING COMPANY/261",
+        "InStock": false,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "BookMyShow Instant Voucher",
+        "discount_pct": 4,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/BookMyShow-Instant-Voucher.svg",
+        "url": "https://www.maximize.money/gift-cards/BookMyShow/375",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Brooks Brothers-Luxe E-Gift Card",
+        "discount_pct": 13.25,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/Brooks-Brothers-Luxe-E-Gift-Card.svg",
+        "url": "https://www.maximize.money/gift-cards/Brooks Brothers-Luxe/376",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Cafe Coffee Day E-Gift Cards",
+        "discount_pct": 12.25,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/Cafe-Coffee-Day-E-Gift-Cards.svg",
+        "url": "https://www.maximize.money/gift-cards/Cafe Coffee Day/331",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Cafe Delhi Heights",
+        "discount_pct": 10.25,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/Cafe-Delhi-Heights.svg",
+        "url": "https://www.maximize.money/gift-cards/Cafe Delhi Heights/262",
+        "InStock": false,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "CALL IT SPRING",
+        "discount_pct": 11.75,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/Call-it-Spring.svg",
+        "url": "https://www.maximize.money/gift-cards/CALL IT SPRING/310",
+        "InStock": false,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Campus",
+        "discount_pct": 13.25,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/Campus.svg",
+        "url": "https://www.maximize.money/gift-cards/Campus/263",
+        "InStock": false,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Candere Diamond Jewellery",
+        "discount_pct": 7.5,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/Candere-Diamond-Jewellery.svg",
+        "url": "https://www.maximize.money/gift-cards/Candere Diamond Jewellery/264",
+        "InStock": false,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Candere Gold Coin",
+        "discount_pct": 1.75,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/Candere-Gold-Coin.svg",
+        "url": "https://www.maximize.money/gift-cards/Candere Gold Coin/265",
+        "InStock": false,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Candere Gold Jewellery",
+        "discount_pct": 2.75,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/Candere-Gold-Jewellery.svg",
+        "url": "https://www.maximize.money/gift-cards/Candere Gold Jewellery/266",
+        "InStock": false,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "CHARLES & KEITH",
+        "discount_pct": 11.75,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/Charles-%26-Keith.svg",
+        "url": "https://www.maximize.money/gift-cards/CHARLES & KEITH/312",
+        "InStock": false,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Chumbak E-Gift Card",
+        "discount_pct": 13.25,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/Chumbak-E-Gift-Card.svg",
+        "url": "https://www.maximize.money/gift-cards/Chumbak/338",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Cleartax",
+        "discount_pct": 45,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/Cleartax.svg",
+        "url": "https://www.maximize.money/gift-cards/Cleartax/302",
+        "InStock": false,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Cleartrip E-Gift Card",
+        "discount_pct": 6.5,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v1/CleartripGC.svg",
+        "url": "https://www.maximize.money/gift-cards/Cleartrip/377",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Cleartrip Hotels E-Gift Card",
+        "discount_pct": 10.75,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v2/ClearTripGC.svg",
+        "url": "https://www.maximize.money/gift-cards/Cleartrip Hotels/227",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "ColorPlus",
+        "discount_pct": 10.75,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/ColorPlus.svg",
+        "url": "https://www.maximize.money/gift-cards/ColorPlus/325",
+        "InStock": false,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Costa Coffee E-Gift Card",
+        "discount_pct": 6.25,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v2/CostaGC.svg",
+        "url": "https://www.maximize.money/gift-cards/Costa Coffee/62",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Croma E-Gift Card",
+        "discount_pct": 2.5,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v2/Croma.svg",
+        "url": "https://www.maximize.money/gift-cards/Croma/220",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Cult E-Gift Card",
+        "discount_pct": 8.75,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/Cult-E-Gift-Card.svg",
+        "url": "https://www.maximize.money/gift-cards/Cult/378",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Daily Objects E-Gift Voucher",
+        "discount_pct": 13.25,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/Daily+Objects.svg",
+        "url": "https://www.maximize.money/gift-cards/Daily Objects/379",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Decathlon E-Gift Card",
+        "discount_pct": 4.75,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/Decathlon-B2B-E-Gift-Card.svg",
+        "url": "https://www.maximize.money/gift-cards/Decathlon/387",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Dominos Pizza",
+        "discount_pct": 14.25,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v2/DominosGC.svg",
+        "url": "https://www.maximize.money/gift-cards/Dominos/415",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Donatekart E-Gift Card",
+        "discount_pct": 4,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/Donatekart-E-Gift-Card.svg",
+        "url": "https://www.maximize.money/gift-cards/Donatekart/381",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Dpauls E-Gift Voucher",
+        "discount_pct": 7.75,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/Dpauls-E-Gift-Voucher.svg",
+        "url": "https://www.maximize.money/gift-cards/Dpauls/382",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Dune London-Luxe E-Gift Card",
+        "discount_pct": 13.25,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/Dune-London-Luxe-E-Gift-Card.svg",
+        "url": "https://www.maximize.money/gift-cards/Dune London-Luxe/383",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "EaseMyTrip - Gift Card",
+        "discount_pct": 8,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v2/EaseMyTripGC.svg",
+        "url": "https://www.maximize.money/gift-cards/EaseMyTrip/55",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "EasyBuy Brand E-Gift Card",
+        "discount_pct": 8.75,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/EB-Brand-E-Gift-Card(EasyBuy).svg",
+        "url": "https://www.maximize.money/gift-cards/EasyBuy/386",
+        "InStock": false,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "EatSure E-Gift Card-B2C",
+        "discount_pct": 10.25,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/EatSure-E-Gift-Card-B2C.svg",
+        "url": "https://www.maximize.money/gift-cards/EatSure/385",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Epic On 1 Month Plan",
+        "discount_pct": 4.75,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/Epic-On-E-Gift-Cards-1+month-subscription-1.svg",
+        "url": "https://www.maximize.money/gift-cards/Epic On/389",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Epic On 1 Year Plan",
+        "discount_pct": 4.75,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/Epic-On-E-Gift-Cards-1+month-subscription.svg",
+        "url": "https://www.maximize.money/gift-cards/Epic On/390",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Epic On 3 Month Plan",
+        "discount_pct": 4.75,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/Epic-On-E-Gift-Cards-3+month-subscription.svg",
+        "url": "https://www.maximize.money/gift-cards/Epic On/391",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Epic On 6 Month Plan",
+        "discount_pct": 4.75,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/Epic-On-E-Gift-Cards-6+month-subscription.svg",
+        "url": "https://www.maximize.money/gift-cards/Epic On/392",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Euphoria Jewellery E-Gift Card",
+        "discount_pct": 5.75,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/Euphoria-Jewellery-E-Gift-Card.svg",
+        "url": "https://www.maximize.money/gift-cards/Euphoria Jewellery/393",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Euphoria Jewellery Gold Coin",
+        "discount_pct": 3.5,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/Euphoria-Jewellery-E-Gift-Card.svg",
+        "url": "https://www.maximize.money/gift-cards/Euphoria Jewellery Gold Coin/269",
+        "InStock": false,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Euphoria Jewellery Silver Coin",
+        "discount_pct": 4.75,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/Euphoria-Jewellery-E-Gift-Card.svg",
+        "url": "https://www.maximize.money/gift-cards/Euphoria Jewellery Silver Coin/270",
+        "InStock": false,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Faasos E-Gift Card",
+        "discount_pct": 11.25,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/Faasos-E-Gift-Card-B2C.svg",
+        "url": "https://www.maximize.money/gift-cards/Faasos/394",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Fab Hotels",
+        "discount_pct": 13,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/Fab-Hotels.svg",
+        "url": "https://www.maximize.money/gift-cards/Fab Hotels/271",
+        "InStock": false,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Fabindia E-Gift Card",
+        "discount_pct": 9.25,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/Fabindia-E-Gift-Card.svg",
+        "url": "https://www.maximize.money/gift-cards/Fabindia/335",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Fancode E-Gift Card",
+        "discount_pct": 7,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/Fancode-E-Gift-Card.svg",
+        "url": "https://www.maximize.money/gift-cards/Fancode/395",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Fashion Factory",
+        "discount_pct": 3.75,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/Fashion-Factory.svg",
+        "url": "https://www.maximize.money/gift-cards/Fashion Factory/272",
+        "InStock": false,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Fastrack Bags",
+        "discount_pct": 8.5,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/Fastrack-Bags.svg",
+        "url": "https://www.maximize.money/gift-cards/Fastrack Bags/273",
+        "InStock": false,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Fastrack E-Gift Card",
+        "discount_pct": 8.5,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/Fastrack-E-Gift-Card.svg",
+        "url": "https://www.maximize.money/gift-cards/Fastrack/396",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "First Cry E-Gift Card",
+        "discount_pct": 6.75,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/FirstCry-E-Gift-Voucher.svg",
+        "url": "https://www.maximize.money/gift-cards/FirstCry/350",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Flipkart",
+        "discount_pct": 1.95,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v2/FlipkartGC.svg",
+        "url": "https://www.maximize.money/gift-cards/Flipkart/410",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Flying Machine E-Gift Card",
+        "discount_pct": 8.5,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/Flying-Machine-E-Gift-Card.svg",
+        "url": "https://www.maximize.money/gift-cards/Flying Machine/397",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Forever New E-Gift Card",
+        "discount_pct": 8.75,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/Forever-New-E-Gift-Card.svg",
+        "url": "https://www.maximize.money/gift-cards/Forever New/351",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Forever21",
+        "discount_pct": 7.75,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/Forever21.svg",
+        "url": "https://www.maximize.money/gift-cards/Forever21/304",
+        "InStock": false,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Foxtale",
+        "discount_pct": 17.75,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/Foxtale.svg",
+        "url": "https://www.maximize.money/gift-cards/Foxtale/255",
+        "InStock": false,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "FreshMenu E-Gift Card",
+        "discount_pct": 4,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/FreshMenu-E-Gift-Card.svg",
+        "url": "https://www.maximize.money/gift-cards/FreshMenu/398",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "FUTURE WORLD - APPLE RESELLER",
+        "discount_pct": 3.85,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/Future+World.svg",
+        "url": "https://www.maximize.money/gift-cards/FUTURE WORLD - APPLE RESELLER/254",
+        "InStock": false,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "G-STAR RAW-Luxe E-Gift Card",
+        "discount_pct": 13.25,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/G-STAR-RAW-Luxe-E-Gift-Card.svg",
+        "url": "https://www.maximize.money/gift-cards/G-STAR RAW-Luxe/404",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Girias E-Gift Card",
+        "discount_pct": 2.75,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/Girias-E-Gift-Card.svg",
+        "url": "https://www.maximize.money/gift-cards/Girias/400",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Giva Jewellery Gold E-Gift Card",
+        "discount_pct": 4,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/Giva-Jewellery-Gold-E-Gift-Card.svg",
+        "url": "https://www.maximize.money/gift-cards/Giva Jewellery/401",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Giva Premium Silver Jewellery E-Gift Card",
+        "discount_pct": 12.75,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/Giva-silver-Jewellery-E-Gift-Card.svg",
+        "url": "https://www.maximize.money/gift-cards/Giva Jewellery/359",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Giva Silver Coin E-Gift Card",
+        "discount_pct": 7.25,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v2/Giva+silver+Jewellery+E-Gift+Card.svg",
+        "url": "https://www.maximize.money/gift-cards/Giva Jewellery/92",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Global Desi India E-Gift Card",
+        "discount_pct": 10.25,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/Global-Desi-India-E-Gift-Card.svg",
+        "url": "https://www.maximize.money/gift-cards/Global Desi India/402",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Google Play",
+        "discount_pct": 4.2,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v2/GooglePlayGC.svg",
+        "url": "https://www.maximize.money/gift-cards/Google Play/54",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "GRT Jewellers E-Gift Card",
+        "discount_pct": 1.75,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v2/GRT+Jewellers+E-Gift+Card.svg",
+        "url": "https://www.maximize.money/gift-cards/GRT Jewellers/97",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "GRT Jewellers E-Gift Card",
+        "discount_pct": 1.35,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/GRT-Jewellers-E-Gift-Card.svg",
+        "url": "https://www.maximize.money/gift-cards/GRT Jewellers/403",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "HAMLEYS - LUXE E-Gift Card",
+        "discount_pct": 13.25,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/HAMLEYS-LUXE-E-Gift-Card.svg",
+        "url": "https://www.maximize.money/gift-cards/HAMLEYS - LUXE/405",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Hamleys E-Gift Card",
+        "discount_pct": 6.75,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/Hamleys-E-Gift-Card.svg",
+        "url": "https://www.maximize.money/gift-cards/HAMLEYS/406",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Health and Glow E-Gift Card",
+        "discount_pct": 10.25,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/Health-and-Glow-E-Gift-Card.svg",
+        "url": "https://www.maximize.money/gift-cards/Health and Glow/407",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Healthians E-Gift Voucher",
+        "discount_pct": 54,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/Healthians-E-Gift-Voucher.svg",
+        "url": "https://www.maximize.money/gift-cards/Healthians/408",
+        "InStock": false,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Homecentre E-Gift Voucher",
+        "discount_pct": 5.25,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v2/HomecentreGC.svg",
+        "url": "https://www.maximize.money/gift-cards/Homecentre/366",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "HP Pay E-Gift Card",
+        "discount_pct": -0.15,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v2/HpPayGC.svg",
+        "url": "https://www.maximize.money/gift-cards/HP Pay/63",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "IGP",
+        "discount_pct": 14.75,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/IGP.svg",
+        "url": "https://www.maximize.money/gift-cards/IGP/240",
+        "InStock": false,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Ikea E-Gift Card",
+        "discount_pct": 4.75,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/IKEA-E-Gift-Voucher(b2b).svg",
+        "url": "https://www.maximize.money/gift-cards/IKEA/221",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Indian Terrain E-Gift Cards",
+        "discount_pct": 13.25,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/Indian-Terrain-E-Gift-Cards.svg",
+        "url": "https://www.maximize.money/gift-cards/Indian Terrain/339",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "INGLOT",
+        "discount_pct": 11.75,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/Inglot.svg",
+        "url": "https://www.maximize.money/gift-cards/INGLOT/313",
+        "InStock": false,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "ITC Hotels E-Gift Card",
+        "discount_pct": 10.25,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v2/ItcHotelsGC.svg",
+        "url": "https://www.maximize.money/gift-cards/ITC/65",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Ixigo E-Gift Card",
+        "discount_pct": 8.5,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v2/IxigoGC.svg",
+        "url": "https://www.maximize.money/gift-cards/Ixigo/216",
+        "InStock": false,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Jack & Jones E-Gift Card",
+        "discount_pct": 11.25,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/JACK-%26-JONES-E-Gift-Card.svg",
+        "url": "https://www.maximize.money/gift-cards/Jack & Jones/228",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Jockey E-Gift Card",
+        "discount_pct": 13.75,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v2/JockeyGC.svg",
+        "url": "https://www.maximize.money/gift-cards/Jockey/28",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Jos Alukkas Jewellery E-Gift Card",
+        "discount_pct": 4,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/Jos-Alukkas-Jewellery-E-Gift-Card.svg",
+        "url": "https://www.maximize.money/gift-cards/Jos Alukkas Jewellery/344",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Kalyan Diamond E-Gift Card",
+        "discount_pct": 7.5,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v2/KalyalJwelersGoldGC.svg",
+        "url": "https://www.maximize.money/gift-cards/Kalyan/226",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Kalyan Gold Coins",
+        "discount_pct": 1.25,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v2/KalyalJwelersGoldGC.svg",
+        "url": "https://www.maximize.money/gift-cards/Kalyan/89",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Kalyan Gold Jewellery",
+        "discount_pct": 2.75,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v2/KalyalJwelersGoldGC.svg",
+        "url": "https://www.maximize.money/gift-cards/Kalyan/33",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Kate Spade - Luxe E-Gift Card",
+        "discount_pct": 12.75,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v2/KatespageGC.svg",
+        "url": "https://www.maximize.money/gift-cards/Kate Spade/49",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Ketan Diamonds Diamond Only",
+        "discount_pct": 11.5,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/Ketan-Diamond-Diamond-Jewellery.svg",
+        "url": "https://www.maximize.money/gift-cards/Ketan Diamonds Diamond Only/241",
+        "InStock": false,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Ketan Diamonds Gold Coin",
+        "discount_pct": 2.4,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/Ketan-Diamond-Gold-Coin.svg",
+        "url": "https://www.maximize.money/gift-cards/Ketan Diamonds Gold Coin/242",
+        "InStock": false,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Ketan Diamonds Gold Jewellery",
+        "discount_pct": 4.85,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/Ketan-Diamond-Gold-Jewellery.svg",
+        "url": "https://www.maximize.money/gift-cards/Ketan Diamonds Gold Jewellery/243",
+        "InStock": false,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "KFC E-Gift Voucher",
+        "discount_pct": 6.5,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/KFC-E-Gift-Voucher.svg",
+        "url": "https://www.maximize.money/gift-cards/KFC/353",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Lee E-Gift Card",
+        "discount_pct": 8.75,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/Lee-E-Gift-Card.svg",
+        "url": "https://www.maximize.money/gift-cards/Lee/355",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Lenskart Gift Card",
+        "discount_pct": 11.5,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v2/LenskartGC.svg",
+        "url": "https://www.maximize.money/gift-cards/Lenskartcom/66",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Levis E-Gift Card",
+        "discount_pct": 10.25,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v2/LevisGC.svg",
+        "url": "https://www.maximize.money/gift-cards/Levis/229",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Louis Philippe",
+        "discount_pct": 7.5,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/Louis-Philippe-E-Gift-Voucher.svg",
+        "url": "https://www.maximize.money/gift-cards/Louis Philippe/277",
+        "InStock": false,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Love Beauty & Planet",
+        "discount_pct": 12.5,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/Love%2C-Beauty-%26-Planet.svg",
+        "url": "https://www.maximize.money/gift-cards/Love Beauty & Planet/244",
+        "InStock": false,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "MakeMyTrip Bus E-Gift Card",
+        "discount_pct": 3.25,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/MMT-bus.svg",
+        "url": "https://www.maximize.money/gift-cards/MakeMyTrip - Bus/222",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "MakeMyTrip E Gift Card",
+        "discount_pct": 7,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v2/MakemytripGC.svg",
+        "url": "https://www.maximize.money/gift-cards/MakeMyTrip/411",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "MakeMyTrip Holiday",
+        "discount_pct": 11,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v2/MMTHolidayGC.svg",
+        "url": "https://www.maximize.money/gift-cards/MakeMyTrip/209",
+        "InStock": false,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Makemytrip Hotel E-Gift Card",
+        "discount_pct": 10.75,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v2/MMTHOTELSGC.svg",
+        "url": "https://www.maximize.money/gift-cards/MakeMyTrip - Hotel/225",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "MakeMyTrip Rail E-Gift Card",
+        "discount_pct": 1.25,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/MMT-rail.svg",
+        "url": "https://www.maximize.money/gift-cards/MakeMyTrip - Rail/223",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Malabar Diamonds",
+        "discount_pct": 4.5,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v2/MalabarGoldsDiamondsGC.svg",
+        "url": "https://www.maximize.money/gift-cards/Malabar Diamonds/307",
+        "InStock": false,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Malabar Gold Coin",
+        "discount_pct": 2.25,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v2/MalabarGoldGC.svg",
+        "url": "https://www.maximize.money/gift-cards/Malabar Gold Coin/306",
+        "InStock": false,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Malabar Gold Jewellery E-Gift Card",
+        "discount_pct": 2.25,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v2/MalabarGoldGC.svg",
+        "url": "https://www.maximize.money/gift-cards/Malabar/43",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Mamaearth",
+        "discount_pct": 17.75,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/mamaearth.svg",
+        "url": "https://www.maximize.money/gift-cards/Mamaearth/245",
+        "InStock": false,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Marks & Spencer",
+        "discount_pct": 12,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/Marks-%26-Spencer.svg",
+        "url": "https://www.maximize.money/gift-cards/Marks & Spencer/279",
+        "InStock": false,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Max Fashion E-Gift Voucher - Online",
+        "discount_pct": 10,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v2/MaxGC.svg",
+        "url": "https://www.maximize.money/gift-cards/Max/52",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "McDonalds E-Gift Card",
+        "discount_pct": 12.75,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/McDonalds-E-Gift-Card.svg",
+        "url": "https://www.maximize.money/gift-cards/McDonalds/356",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Melorra Diamond Jewellery",
+        "discount_pct": 7.75,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/Melorra-Diamond-Jewellry.svg",
+        "url": "https://www.maximize.money/gift-cards/Melorra Diamond Jewellery/246",
+        "InStock": false,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Mia By Tanishq E-Gift Card",
+        "discount_pct": 4,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v2/MiaGC.svg",
+        "url": "https://www.maximize.money/gift-cards/Mia/345",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "More E Gift Card",
+        "discount_pct": 3.5,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v2/MoreGC.svg",
+        "url": "https://www.maximize.money/gift-cards/More/31",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "MyGlamm E-Gift Cards",
+        "discount_pct": 15.75,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/MyGlamm-E-Gift-Cards.svg",
+        "url": "https://www.maximize.money/gift-cards/MyGlamm/332",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Myntra",
+        "discount_pct": 6.25,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v2/MyntraGC.svg",
+        "url": "https://www.maximize.money/gift-cards/Myntra/363",
+        "InStock": false,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Nilkamal Homes E-Gift Card",
+        "discount_pct": 7.5,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/nilkamalhomes.svg",
+        "url": "https://www.maximize.money/gift-cards/Nilkamal Homes/329",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Nykaa E Gift Card",
+        "discount_pct": 8.75,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v2/NykaaGC.svg",
+        "url": "https://www.maximize.money/gift-cards/Nykaa/15",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Nykaa Fashion E-Gift Card",
+        "discount_pct": 8.25,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v2/NaykaFashionsGC.svg",
+        "url": "https://www.maximize.money/gift-cards/Nykaa/7",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Nykaa Men E-Gift Card",
+        "discount_pct": 6.75,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v2/NykaaMenGC.svg",
+        "url": "https://www.maximize.money/gift-cards/Nykaa Men/341",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "OLA CABS",
+        "discount_pct": 3.75,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/Ola.svg",
+        "url": "https://www.maximize.money/gift-cards/OLA CABS/287",
+        "InStock": false,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Only E-Gift Card",
+        "discount_pct": 11.25,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v2/ONLY+E-Gift+Card.svg",
+        "url": "https://www.maximize.money/gift-cards/ONLY/230",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "PANTALOONS",
+        "discount_pct": 8.1,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v2/Pantaloons+E-Gift+Card-B2C.svg",
+        "url": "https://www.maximize.money/gift-cards/Pantaloons/360",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Park Avenue",
+        "discount_pct": 10.75,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/Park+Avenue.svg",
+        "url": "https://www.maximize.money/gift-cards/Park Avenue/323",
+        "InStock": false,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Parx",
+        "discount_pct": 10.75,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/Parx.svg",
+        "url": "https://www.maximize.money/gift-cards/Parx/324",
+        "InStock": false,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Paul & Shark - Luxe E-Gift Card",
+        "discount_pct": 13.25,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v2/PaulSharkGC.svg",
+        "url": "https://www.maximize.money/gift-cards/Paul & Shark/35",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "PC Jeweller Diamond",
+        "discount_pct": 3.75,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/PCJ-Diamond-Jewellery-E-Gift+-Card.svg",
+        "url": "https://www.maximize.money/gift-cards/PC Jeweller Diamond/248",
+        "InStock": false,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "PC Jeweller Gold Coin",
+        "discount_pct": 0.75,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/PCJ-Gold-Coin-Jewellery-E-Gift-Card.svg",
+        "url": "https://www.maximize.money/gift-cards/PC Jeweller Gold Coin/250",
+        "InStock": false,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "PC Jeweller Gold Jewellery",
+        "discount_pct": 1.75,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/PCJ-Gold-Jewellery-E-Gift-Card.svg",
+        "url": "https://www.maximize.money/gift-cards/PC Jeweller Gold Jewellery/249",
+        "InStock": false,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "PCJ Diamond Jewellery",
+        "discount_pct": 4.25,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v2/PCJ+Gold+Jewellery+E-Gift+Card.svg",
+        "url": "https://www.maximize.money/gift-cards/PCjeweller/91",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Peter England E-Gift Voucher",
+        "discount_pct": 7.5,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v2/PeterEnglandGC.svg",
+        "url": "https://www.maximize.money/gift-cards/Peter England/57",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "PhonePe E-Gift Card",
+        "discount_pct": 0,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v2/phonepe-1.svg",
+        "url": "https://www.maximize.money/gift-cards/Phone Pe/219",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Puma E-Gift Card",
+        "discount_pct": 10.25,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v2/PumaGC.svg",
+        "url": "https://www.maximize.money/gift-cards/Puma/231",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "PVR",
+        "discount_pct": 18.75,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v2/PVRGC.svg",
+        "url": "https://www.maximize.money/gift-cards/PVR/194",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "R&B",
+        "discount_pct": 11.75,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/R%26B.svg",
+        "url": "https://www.maximize.money/gift-cards/R&B/314",
+        "InStock": false,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Rangriti",
+        "discount_pct": 7.5,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/Rangriti.svg",
+        "url": "https://www.maximize.money/gift-cards/Rangriti/326",
+        "InStock": false,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "RAY-BAN\n",
+        "discount_pct": 8.75,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v2/Ray-Ban+E-Gift+Cards.svg",
+        "url": "https://www.maximize.money/gift-cards/Ray-Ban/361",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Raymond - Ready to Wear",
+        "discount_pct": 10.75,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/The-Raymond-Shop.svg",
+        "url": "https://www.maximize.money/gift-cards/Raymond - Ready to Wear/320",
+        "InStock": false,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Relaxo",
+        "discount_pct": 11.5,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/Relaxo.svg",
+        "url": "https://www.maximize.money/gift-cards/Relaxo/281",
+        "InStock": false,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Reliance Digital Gift Card",
+        "discount_pct": 4,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v2/Reliance+Digital+E-Gift+Voucher.svg",
+        "url": "https://www.maximize.money/gift-cards/Reliance/95",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Reliance Jewels E-Gift Card",
+        "discount_pct": 4,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v2/Reliance+Jewels+E-Gift+Voucher.svg",
+        "url": "https://www.maximize.money/gift-cards/Reliance/291",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Reliance Jio Mart E-Gift Card",
+        "discount_pct": 4,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v2/RelianceJioMartE-GiftCard.svg",
+        "url": "https://www.maximize.money/gift-cards/Reliance Jio Mart/224",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Reliance My Jio Store",
+        "discount_pct": 3.75,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/My-Jio-Store-E-Gift-Voucher.svg",
+        "url": "https://www.maximize.money/gift-cards/Reliance My Jio Store/282",
+        "InStock": false,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Reliance Smart",
+        "discount_pct": 3.75,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/Reliance-Smart-Point-E-Gift-Card.svg",
+        "url": "https://www.maximize.money/gift-cards/Reliance Smart/283",
+        "InStock": false,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Reliance Smart Point",
+        "discount_pct": 3.75,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/Reliance-Smart-Super-Store-E-Gift-Card.svg",
+        "url": "https://www.maximize.money/gift-cards/Reliance Smart Point/284",
+        "InStock": false,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Reliance Smart Super Store E-Gift Card",
+        "discount_pct": 1.75,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/Reliance-Smart-Bazaar-E-Gift-Card.svg",
+        "url": "https://www.maximize.money/gift-cards/Reliance Smart Super Store/357",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Reliance Trends",
+        "discount_pct": 5.5,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/Reliance-Trends-E-Gift-Voucher.svg",
+        "url": "https://www.maximize.money/gift-cards/Reliance Trends/285",
+        "InStock": false,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Reliance Trends Footwear",
+        "discount_pct": 5.5,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/Trends-Footwear-E-Gift-Voucher.svg",
+        "url": "https://www.maximize.money/gift-cards/Reliance Trends Footwear/286",
+        "InStock": false,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Samsonite",
+        "discount_pct": 5.75,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/Samsonite.svg",
+        "url": "https://www.maximize.money/gift-cards/Samsonite/251",
+        "InStock": false,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Selected Homme E-Gift Card",
+        "discount_pct": 11.25,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/Selected-Homme-E-Gift-Card.svg",
+        "url": "https://www.maximize.money/gift-cards/Selected Homme/337",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Simon Carter",
+        "discount_pct": 7.75,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/Simon-Carter-eGift-cards.svg",
+        "url": "https://www.maximize.money/gift-cards/Simon Carter/305",
+        "InStock": false,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Skechers",
+        "discount_pct": 10.75,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/Skechers-E-Gift-Card.svg",
+        "url": "https://www.maximize.money/gift-cards/Skechers/288",
+        "InStock": false,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Skullcandy",
+        "discount_pct": 17.5,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/Skullcandy.svg",
+        "url": "https://www.maximize.money/gift-cards/Skullcandy/289",
+        "InStock": false,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Spencer's Retail",
+        "discount_pct": 5.75,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/Spencer_s-Retail.svg",
+        "url": "https://www.maximize.money/gift-cards/Spencer's Retail/290",
+        "InStock": false,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Starbucks",
+        "discount_pct": 8.75,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v2/StarbucksGC.svg",
+        "url": "https://www.maximize.money/gift-cards/Starbucks/321",
+        "InStock": false,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Steam Wallet",
+        "discount_pct": 4.25,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v2/Steam+E-Gift+Voucher.svg",
+        "url": "https://www.maximize.money/gift-cards/Steam Wallet/218",
+        "InStock": false,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Subway E-Gift Card",
+        "discount_pct": 10.25,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/Subway-E-Gift-Card.svg",
+        "url": "https://www.maximize.money/gift-cards/Subway/330",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Superdry - Luxe E-Gift Card",
+        "discount_pct": 13.75,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v2/SuperdryGC.svg",
+        "url": "https://www.maximize.money/gift-cards/Superdry/50",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Taj Experiences",
+        "discount_pct": 7.5,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v2/Taj+Hotels+E-Gift+Card.svg",
+        "url": "https://www.maximize.money/gift-cards/Taj/211",
+        "InStock": false,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Taneira E-Gift card",
+        "discount_pct": 8.75,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/Taneira-E-Gift-card.svg",
+        "url": "https://www.maximize.money/gift-cards/Taneira/354",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Tanishq Diamond (Studded) E-Gift Card",
+        "discount_pct": 3.25,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v1/TanishqGC.svg",
+        "url": "https://www.maximize.money/gift-cards/Tanishq/48",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Tanishq Gold Coin",
+        "discount_pct": 0.5,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v1/TanishqGC.svg",
+        "url": "https://www.maximize.money/gift-cards/Tanishq/47",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Tanishq Gold Coin E-Gift Card",
+        "discount_pct": 0.75,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/Tanishq-Gold-Coin-E-Gift-Card.svg",
+        "url": "https://www.maximize.money/gift-cards/Tanishq/358",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Tanishq Gold Jewellery",
+        "discount_pct": 2.25,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v1/TanishqGC.svg",
+        "url": "https://www.maximize.money/gift-cards/Tanishq/46",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Tata Cliq E-Gift Card",
+        "discount_pct": 8.25,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v2/TataCliqGC.svg",
+        "url": "https://www.maximize.money/gift-cards/Tata Cliq/20",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Tata CliQ Luxury E-Gift card",
+        "discount_pct": 9,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/Tata-CliQ-Luxury-E-Gift-card.svg",
+        "url": "https://www.maximize.money/gift-cards/Tata Cliq/418",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "The Body Shop",
+        "discount_pct": 5,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/The-Body-Shop-E-Gift-Cards.svg",
+        "url": "https://www.maximize.money/gift-cards/The Body Shop/292",
+        "InStock": false,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "The Man Company",
+        "discount_pct": 16.75,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/The-Man-Company.svg",
+        "url": "https://www.maximize.money/gift-cards/The Man Company/293",
+        "InStock": false,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Third Wave Coffee E-Gift Card",
+        "discount_pct": 11.25,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v2/ThirdwavecoffeeGC.svg",
+        "url": "https://www.maximize.money/gift-cards/Third Wave Coffee/197",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Titan",
+        "discount_pct": 8.25,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/Titan-E-Gift-card.svg",
+        "url": "https://www.maximize.money/gift-cards/Titan/253",
+        "InStock": false,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Titan Minimals",
+        "discount_pct": 9,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/Titan-Minimals.svg",
+        "url": "https://www.maximize.money/gift-cards/Titan Minimals/294",
+        "InStock": false,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "TRUEFITT & HILL",
+        "discount_pct": 23.75,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/TrueFitt-%26-Hill.svg",
+        "url": "https://www.maximize.money/gift-cards/TRUEFITT & HILL/295",
+        "InStock": false,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Uber E Gift Card",
+        "discount_pct": 3.75,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v2/UberGC.svg",
+        "url": "https://www.maximize.money/gift-cards/Uber/10",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "V Mart",
+        "discount_pct": 9.25,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/V-Mart.svg",
+        "url": "https://www.maximize.money/gift-cards/V Mart/296",
+        "InStock": false,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Valorant",
+        "discount_pct": 3.75,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v2/Valorant+Points+E-Gift+Voucher.svg",
+        "url": "https://www.maximize.money/gift-cards/Valorant/217",
+        "InStock": false,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Van Heusen",
+        "discount_pct": 7.5,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/Van-Heusen-E-Gift-Voucher.svg",
+        "url": "https://www.maximize.money/gift-cards/Van Heusen/297",
+        "InStock": false,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Vero Moda E-Gift Card",
+        "discount_pct": 11.25,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/Vero-Moda-E-Gift-Cards.svg",
+        "url": "https://www.maximize.money/gift-cards/Vero Moda/232",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "VICTORIA'S SECRET",
+        "discount_pct": 11.75,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/Victoria_s-Secret.svg",
+        "url": "https://www.maximize.money/gift-cards/VICTORIA'S SECRET/316",
+        "InStock": false,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "VICTORIA'S SECRET BEAUTY",
+        "discount_pct": 11.75,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/Victoria_s-Secret-Beauty.svg",
+        "url": "https://www.maximize.money/gift-cards/VICTORIA'S SECRET BEAUTY/315",
+        "InStock": false,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Vijay Sales",
+        "discount_pct": 2.75,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/Vijay-Sales-E-Gift-Card.svg",
+        "url": "https://www.maximize.money/gift-cards/Vijay Sales/298",
+        "InStock": false,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Wakefit E-Gift Card",
+        "discount_pct": 4,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/Wakefit-E-Gift-Card.svg",
+        "url": "https://www.maximize.money/gift-cards/Wakefit/352",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Westside E-Gift Card",
+        "discount_pct": 10.25,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v2/Westside+E-Gift+Card.svg",
+        "url": "https://www.maximize.money/gift-cards/Westside/233",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Wildcraft",
+        "discount_pct": 7.5,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v2/WildGC.svg",
+        "url": "https://www.maximize.money/gift-cards/Wildcraft/299",
+        "InStock": false,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Wonderchef",
+        "discount_pct": 11.75,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/Wonderchef-E-Gift-Card.svg",
+        "url": "https://www.maximize.money/gift-cards/Wonderchef/300",
+        "InStock": false,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Woodland",
+        "discount_pct": 10.75,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v3/Woodland.svg",
+        "url": "https://www.maximize.money/gift-cards/Woodland/301",
+        "InStock": false,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Wow!China",
+        "discount_pct": 9.75,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v2/WowChinaGC.svg",
+        "url": "https://www.maximize.money/gift-cards/Wow!China/319",
+        "InStock": false,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Yatra",
+        "discount_pct": 7.75,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v2/YatraGC.svg",
+        "url": "https://www.maximize.money/gift-cards/Yatra/75",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Zepto E-Gift Card",
+        "discount_pct": 3.75,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v2/zeptoGC.svg",
+        "url": "https://www.maximize.money/gift-cards/Zepto/205",
+        "InStock": true,
+        "sitename": "Maximize money"
+    },
+    {
+        "name": "Zomato E-Gift Card",
+        "discount_pct": 4.75,
+        "image_url": "https://savemax.s3.ap-south-1.amazonaws.com/giftcard/logo/v2/ZomatoGC.svg",
+        "url": "https://www.maximize.money/gift-cards/Zomato/36",
+        "InStock": true,
+        "sitename": "Maximize money"
+    }
+]
