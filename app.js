@@ -38,17 +38,17 @@ let allData = loadDataFromDirectory(directoryPath);
 
 // Run once on initialization
 // ignore for local
-if(process.env.ENVIRONMENT != "local"){
-    (async () => {
-    console.log('[INIT] Running voucher scrapers...');
-    try {
-        await runVoucherScrapers();
-        allData = loadDataFromDirectory(directoryPath);
-        console.log('[INIT] Data scraped and loaded into memory.');
-    } catch (err) {
-        console.error('[INIT] Scraper failed:', err.message);
-    }
-    })();
+if (process.env.ENVIRONMENT !== "local") {
+    setTimeout(async () => {
+        console.log('[INIT] Running voucher scrapers after 10-minute delay...');
+        try {
+            await runVoucherScrapers();
+            allData = loadDataFromDirectory(directoryPath);
+            console.log('[INIT] Data scraped and loaded into memory.');
+        } catch (err) {
+            console.error('[INIT] Scraper failed:', err.message);
+        }
+    }, 10 * 60 * 1000); // 10 minutes in milliseconds
 }
 
 // Run script every 5 minutes
