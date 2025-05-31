@@ -6,32 +6,54 @@ const path = require("path");
 // Ensure directory exists
 fs.ensureDirSync("voucher_data_dump");
 
+// ---------- RANDOM GENERATORS ----------
+
+const userAgents = [
+  "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+  "Mozilla/5.0 (Macintosh; Intel Mac OS X 13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36",
+  "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36",
+  "Mozilla/5.0 (iPhone; CPU iPhone OS 16_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.0 Mobile/15E148 Safari/604.1",
+  "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/114.0"
+];
+
+function getRandomAmazonHeaders() {
+  return {
+    "accept": "text/html,image/webp,*/*",
+    "accept-language": "en-GB,en;q=0.5",
+    "content-type": "application/json",
+    "origin": "https://www.amazon.in",
+    "referer": "https://www.amazon.in/",
+    "user-agent": userAgents[Math.floor(Math.random() * userAgents.length)],
+    "x-requested-with": "XMLHttpRequest"
+  };
+}
+
+function generateRandomXpid(length = 12) {
+  const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+  return Array.from({ length }, () => chars[Math.floor(Math.random() * chars.length)]).join("");
+}
+
+function generateAmazonUrl(page = 1) {
+  const xpid = generateRandomXpid();
+  return `https://www.amazon.in/s/query?fs=true&i=gift-cards&page=${page}&qid=1748099742&ref=sr_pg_${page}&rh=n%3A6681889031&s=popularity-rank&srs=6681889031&xpid=1RwkI9xapLWCi`;
+}
+
 // ---------- AMAZON SCRAPER ----------
 
-const amazonBaseUrl = "https://www.amazon.in/s/query?fs=true&i=gift-cards&page=1&qid=1748099742&ref=sr_pg_1&rh=n%3A6681889031&s=popularity-rank&srs=6681889031&xpid=PKreUTD7FWloE";
-const amazonHeaders = {
-  "accept": "text/html,image/webp,*/*",
-  "accept-language": "en-GB,en;q=0.5",
-  "content-type": "application/json",
-  "origin": "https://www.amazon.in",
-  "referer": "https://www.amazon.in/",
-  "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
-  "x-requested-with": "XMLHttpRequest"
-};
-
-async function fetchAmazonRawHTML(url, payload = '{"customer-action":"pagination"}') {
+async function fetchAmazonRawHTML(page = 1, payload = '{"customer-action":"pagination"}') {
+  const url = generateAmazonUrl(page);
+  const headers = getRandomAmazonHeaders();
   try {
-    const response = await axios.post(url, payload, { headers: amazonHeaders });
+    const response = await axios.post(url, payload, { headers });
     return response.data;
   } catch (error) {
-    console.error("Amazon request failed:", error.message);
+    console.error(`Amazon request failed for page ${page}:`, error.message);
     return null;
   }
 }
 
 function extractLastPageFromHtmlChunks(htmlChunks) {
   let maxPage = 1;
-
   for (const html of htmlChunks) {
     const $ = cheerio.load(html);
     $("span.s-pagination-item").each((_, el) => {
@@ -42,11 +64,8 @@ function extractLastPageFromHtmlChunks(htmlChunks) {
       }
     });
   }
-
   return maxPage;
 }
-
-
 
 function extractAmazonProductInfo(htmlChunk) {
   const $ = cheerio.load(htmlChunk);
@@ -78,62 +97,64 @@ function extractAmazonProductInfo(htmlChunk) {
 
 async function scrapeAmazon() {
   console.log("🔍 Starting Amazon voucher scraping...");
-  const firstPageData = await fetchAmazonRawHTML(amazonBaseUrl);
-  if (!firstPageData) return [];
-
-  const parts = firstPageData.split("&&&").map(p => p.trim()).filter(Boolean);
-  const htmlChunks = parts.map((part, i) => {
   try {
-    const json = JSON.parse(part);
-    return json[2]?.html || null;
-  } catch {
-    return null;
-  }
-}).filter(Boolean);
+    const firstPageData = await fetchAmazonRawHTML(1);
+    if (!firstPageData) throw new Error("Failed to fetch first page.");
 
-  const lastPage = extractLastPageFromHtmlChunks(htmlChunks);
-  console.log(`Total pages found: ${lastPage}`);
-
-  let allProducts = [];
-
-  for (let page = 1; page <= lastPage; page++) {
-    const pageUrl = amazonBaseUrl.replace("page=1", `page=${page}`);
-    console.log(`Processing Amazon page ${page}...`);
-    const rawData = await fetchAmazonRawHTML(pageUrl);
-
-    if (!rawData) continue;
-
-    const entries = rawData.split("&&&").map(p => {
+    const parts = firstPageData.split("&&&").map(p => p.trim()).filter(Boolean);
+    const htmlChunks = parts.map((part) => {
       try {
-        return JSON.parse(p);
+        const json = JSON.parse(part);
+        return json[2]?.html || null;
       } catch {
         return null;
       }
     }).filter(Boolean);
 
-    for (const entry of entries) {
-      if (
-        Array.isArray(entry) &&
-        (entry[0] === "search-results" ||
-         entry[1]?.startsWith("data-main-slot:search-result-"))
-      ) {
-        const html = entry[2]?.html;
-        if (html) {
-          const pageProducts = extractAmazonProductInfo(html);
-          allProducts.push(...pageProducts);
+    const lastPage = extractLastPageFromHtmlChunks(htmlChunks);
+    console.log(`Total pages found: ${lastPage}`);
+
+    let allProducts = [];
+
+    for (let page = 1; page <= lastPage; page++) {
+      console.log(`Processing Amazon page ${page}...`);
+      const rawData = await fetchAmazonRawHTML(page);
+      if (!rawData) throw new Error(`Failed to fetch page ${page}`);
+
+      const entries = rawData.split("&&&").map(p => {
+        try {
+          return JSON.parse(p);
+        } catch {
+          return null;
+        }
+      }).filter(Boolean);
+
+      for (const entry of entries) {
+        if (
+          Array.isArray(entry) &&
+          (entry[0] === "search-results" ||
+            entry[1]?.startsWith("data-main-slot:search-result-"))
+        ) {
+          const html = entry[2]?.html;
+          if (html) {
+            const pageProducts = extractAmazonProductInfo(html);
+            allProducts.push(...pageProducts);
+          }
         }
       }
+
+      await new Promise(r => setTimeout(r, 4000)); // Avoid throttling
     }
 
-    await new Promise(r => setTimeout(r, 4000)); // Wait 1s to avoid throttling
+    const amazonOutput = "voucher_data_dump/amazon_voucher_data.json";
+    await fs.writeJson(amazonOutput, allProducts, { spaces: 4 });
+    console.log(`✅ Amazon data saved to ${amazonOutput}`);
+    return allProducts;
+  } catch (err) {
+    console.error("❌ Amazon scraping failed:", err.message);
+    return [];
   }
-
-  const amazonOutput = "voucher_data_dump/amazon_voucher_data.json";
-  await fs.writeJson(amazonOutput, allProducts, { spaces: 4 });
-  console.log(`✅ Amazon data saved to ${amazonOutput}`);
-  return allProducts;
 }
-
 
 // ---------- MAXIMIZE MONEY SCRAPER ----------
 
@@ -143,7 +164,7 @@ async function scrapeMaximizeMoney() {
 
   const headers = {
     "accept": "application/json, text/plain, */*",
-    "authorization": `Bearer ${process.env.MAXMIZE_TOKEN}`, // Replace with actual token
+    "authorization": `Bearer ${process.env.MAXMIZE_TOKEN}`,
     "origin": "https://www.maximize.money",
     "referer": "https://www.maximize.money/",
     "user-agent": "Mozilla/5.0"
