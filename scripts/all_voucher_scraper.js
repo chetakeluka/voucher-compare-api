@@ -1,100 +1,111 @@
 const axios = require("axios");
 const cheerio = require("cheerio");
 const fs = require("fs-extra");
+const path = require("path");
+const puppeteer = require("puppeteer-extra");
+const StealthPlugin = require("puppeteer-extra-plugin-stealth");
 
 // Ensure directory exists
 fs.ensureDirSync("voucher_data_dump");
 
-// User-agent pool to help avoid detection
-const userAgents = [
-  "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
-  "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.1 Safari/605.1.15",
-  "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
-];
+// ---------- AMAZON SCRAPER ----------
+puppeteer.use(StealthPlugin());
 
-function getRandomUserAgent() {
-  return userAgents[Math.floor(Math.random() * userAgents.length)];
-}
+async function extractAmazonProductInfo(page) {
+  return await page.evaluate(() => {
+    const items = [];
+    const productElements = document.querySelectorAll("div.s-result-item[data-asin]");
 
-function getAmazonHeaders() {
-  return {
-    "accept": "text/html",
-    "accept-language": "en-US,en;q=0.9",
-    "user-agent": getRandomUserAgent(),
-  };
-}
+    productElements.forEach(el => {
+      const titleEl = el.querySelector("h2 span");
+      const linkEl = el.querySelector("a.a-link-normal");
+      const imgEl = el.querySelector("img.s-image");
 
-async function fetchAmazonPage(url, retries = 3) {
-  while (retries > 0) {
-    try {
-      const response = await axios.get(url, { headers: getAmazonHeaders() });
-      return response.data;
-    } catch (error) {
-      console.warn(`⚠️ Failed to fetch ${url} — ${error.message}`);
-      retries--;
-      await new Promise(r => setTimeout(r, 2000));
-    }
-  }
-  return null;
-}
+      const title = titleEl?.innerText.trim();
+      if (!title) return;
 
-function extractAmazonProductInfo(html) {
-  const $ = cheerio.load(html);
-  const products = [];
+      const name = title.split("|")[0].trim();
+      const url = linkEl ? `https://www.amazon.in${linkEl.getAttribute("href")}` : "N/A";
+      const discountMatch = /Flat\s+(\d+)%\s+off/i.exec(title);
+      const discount = discountMatch ? parseInt(discountMatch[1], 10) : 0;
+      const image_url = imgEl?.getAttribute("src") || null;
 
-  $("div.s-result-item[data-asin]").each((_, el) => {
-    const title = $(el).find("h2 span").text().trim();
-    if (!title) return;
-
-    const name = title.split("|")[0].trim();
-    const urlTag = $(el).find("a.a-link-normal[href]").first();
-    const url = urlTag.length ? `https://www.amazon.in${urlTag.attr("href")}` : "N/A";
-    const discountMatch = /Flat\s+(\d+)%\s+off/i.exec(title);
-    const discount = discountMatch ? parseInt(discountMatch[1], 10) : 0;
-    const imgUrl = $(el).find("img.s-image").attr("src") || null;
-
-    products.push({
-      name,
-      discount_pct: discount,
-      url,
-      image_url: imgUrl,
-      sitename: "Amazon",
-      InStock: true,
+      items.push({
+        name,
+        discount_pct: discount,
+        url,
+        image_url,
+        sitename: "Amazon",
+        InStock: true,
+      });
     });
+
+    return items;
+  });
+}
+
+async function getLastPageNumber(page) {
+  return await page.evaluate(() => {
+    const pageItems = [...document.querySelectorAll("span.s-pagination-item")];
+    const pageNumbers = pageItems
+      .map(el => parseInt(el.innerText.trim(), 10))
+      .filter(num => !isNaN(num));
+    return pageNumbers.length ? Math.max(...pageNumbers) : 1;
+  });
+}
+
+async function scrapeAmazonWithPuppeteer() {
+  const browser = await puppeteer.launch({
+    headless: true,
+    args: ["--no-sandbox", "--disable-setuid-sandbox"]
   });
 
-  return products;
-}
-
-async function scrapeAmazon() {
-  console.log("🔍 Starting Amazon voucher scraping...");
+  const page = await browser.newPage();
+  await page.setUserAgent("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36");
+  await page.setViewport({ width: 1280, height: 800 });
 
   const baseUrl = "https://www.amazon.in/s?i=gift-cards&s=popularity-rank&rh=n%3A6681889031&page=";
-  const totalPages = 3; // Test with 3 pages first, increase later if stable
-  const allProducts = [];
+  let allProducts = [];
 
-  for (let page = 1; page <= totalPages; page++) {
-    const pageUrl = `${baseUrl}${page}`;
-    console.log(`📄 Fetching page ${page}...`);
+  // Navigate to page 1 to get total page count
+  console.log("📄 Fetching first page...");
+  await page.goto(baseUrl + "1", { waitUntil: "domcontentloaded", timeout: 30000 });
 
-    const html = await fetchAmazonPage(pageUrl);
-    if (!html) continue;
+  const lastPage = await getLastPageNumber(page);
+  console.log(`📚 Found total pages: ${lastPage}`);
 
-    const pageProducts = extractAmazonProductInfo(html);
-    allProducts.push(...pageProducts);
+  for (let pageNum = 1; pageNum <= lastPage; pageNum++) {
+    const url = baseUrl + pageNum;
+    console.log(`📄 Scraping page ${pageNum}...`);
 
-    // Randomized delay (3-7s)
-    const delay = Math.floor(Math.random() * 4000) + 3000;
+    try {
+      await page.goto(url, { waitUntil: "domcontentloaded", timeout: 30000 });
+
+      const blocked = await page.evaluate(() =>
+        document.title.includes("Sorry") || document.body.innerText.includes("Enter the characters you see below")
+      );
+      if (blocked) {
+        console.warn("⚠️ Blocked by Amazon on this page");
+        continue;
+      }
+
+      const products = await extractAmazonProductInfo(page);
+      allProducts.push(...products);
+    } catch (err) {
+      console.error(`❌ Error on page ${pageNum}:`, err.message);
+    }
+
+    const delay = Math.floor(Math.random() * 3000) + 2000;
     console.log(`⏱ Waiting ${delay}ms before next page...`);
     await new Promise(r => setTimeout(r, delay));
   }
 
-  const outputPath = "voucher_data_dump/amazon_voucher_data.json";
-  await fs.writeJson(outputPath, allProducts, { spaces: 4 });
-  console.log(`✅ Scraping completed. Saved to ${outputPath}`);
-  return allProducts;
-}
+  await browser.close();
 
+  const output = "voucher_data_dump/amazon_voucher_data.json";
+  await fs.writeJson(output, allProducts, { spaces: 4 });
+  console.log(`✅ Amazon data saved to ${output}`);
+}
 
 
 // ---------- MAXIMIZE MONEY SCRAPER ----------
@@ -137,7 +148,7 @@ async function scrapeMaximizeMoney() {
 // ---------- MAIN FUNCTION (EXPORTABLE) ----------
 async function main() {
   try {
-    const amazonData = await scrapeAmazon();
+    const amazonData = await scrapeAmazonWithPuppeteer();
     const maximizeMoneyData = await scrapeMaximizeMoney();
 
     return {
