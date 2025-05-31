@@ -1,63 +1,53 @@
 const axios = require("axios");
 const cheerio = require("cheerio");
 const fs = require("fs-extra");
-const path = require("path");
 
 // Ensure directory exists
 fs.ensureDirSync("voucher_data_dump");
 
-// ---------- AMAZON SCRAPER ----------
+// User-agent pool to help avoid detection
+const userAgents = [
+  "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+  "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.1 Safari/605.1.15",
+  "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
+];
 
-const amazonBaseUrl = "https://www.amazon.in/s/query?fs=true&i=gift-cards&page=1&qid=1748099742&ref=sr_pg_1&rh=n%3A6681889031&s=popularity-rank&srs=6681889031&xpid=PKreUTD7FWloE";
-const amazonHeaders = {
-  "accept": "text/html,image/webp,*/*",
-  "accept-language": "en-GB,en;q=0.5",
-  "content-type": "application/json",
-  "origin": "https://www.amazon.in",
-  "referer": "https://www.amazon.in/",
-  "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
-  "x-requested-with": "XMLHttpRequest"
-};
-
-async function fetchAmazonRawHTML(url, payload = '{"customer-action":"pagination"}') {
-  try {
-    const response = await axios.post(url, payload, { headers: amazonHeaders });
-    return response.data;
-  } catch (error) {
-    console.error("Amazon request failed:", error.message);
-    return null;
-  }
+function getRandomUserAgent() {
+  return userAgents[Math.floor(Math.random() * userAgents.length)];
 }
 
-function extractLastPageFromHtmlChunks(htmlChunks) {
-  let maxPage = 1;
-
-  for (const html of htmlChunks) {
-    const $ = cheerio.load(html);
-    $("span.s-pagination-item").each((_, el) => {
-      const text = $(el).text().trim();
-      if (/^\d+$/.test(text)) {
-        const num = parseInt(text, 10);
-        if (num > maxPage) maxPage = num;
-      }
-    });
-  }
-
-  return maxPage;
+function getAmazonHeaders() {
+  return {
+    "accept": "text/html",
+    "accept-language": "en-US,en;q=0.9",
+    "user-agent": getRandomUserAgent(),
+  };
 }
 
+async function fetchAmazonPage(url, retries = 3) {
+  while (retries > 0) {
+    try {
+      const response = await axios.get(url, { headers: getAmazonHeaders() });
+      return response.data;
+    } catch (error) {
+      console.warn(`⚠️ Failed to fetch ${url} — ${error.message}`);
+      retries--;
+      await new Promise(r => setTimeout(r, 2000));
+    }
+  }
+  return null;
+}
 
-
-function extractAmazonProductInfo(htmlChunk) {
-  const $ = cheerio.load(htmlChunk);
+function extractAmazonProductInfo(html) {
+  const $ = cheerio.load(html);
   const products = [];
 
-  $("div[data-asin]").each((_, el) => {
-    const title = $(el).find("h2.a-size-base-plus").text().trim();
+  $("div.s-result-item[data-asin]").each((_, el) => {
+    const title = $(el).find("h2 span").text().trim();
     if (!title) return;
 
     const name = title.split("|")[0].trim();
-    const urlTag = $(el).find("a[href]").first();
+    const urlTag = $(el).find("a.a-link-normal[href]").first();
     const url = urlTag.length ? `https://www.amazon.in${urlTag.attr("href")}` : "N/A";
     const discountMatch = /Flat\s+(\d+)%\s+off/i.exec(title);
     const discount = discountMatch ? parseInt(discountMatch[1], 10) : 0;
@@ -78,61 +68,33 @@ function extractAmazonProductInfo(htmlChunk) {
 
 async function scrapeAmazon() {
   console.log("🔍 Starting Amazon voucher scraping...");
-  const firstPageData = await fetchAmazonRawHTML(amazonBaseUrl);
-  if (!firstPageData) return [];
 
-  const parts = firstPageData.split("&&&").map(p => p.trim()).filter(Boolean);
-  const htmlChunks = parts.map((part, i) => {
-  try {
-    const json = JSON.parse(part);
-    return json[2]?.html || null;
-  } catch {
-    return null;
-  }
-}).filter(Boolean);
+  const baseUrl = "https://www.amazon.in/s?i=gift-cards&s=popularity-rank&rh=n%3A6681889031&page=";
+  const totalPages = 3; // Test with 3 pages first, increase later if stable
+  const allProducts = [];
 
-  const lastPage = extractLastPageFromHtmlChunks(htmlChunks);
-  console.log(`Total pages found: ${lastPage}`);
+  for (let page = 1; page <= totalPages; page++) {
+    const pageUrl = `${baseUrl}${page}`;
+    console.log(`📄 Fetching page ${page}...`);
 
-  let allProducts = [];
+    const html = await fetchAmazonPage(pageUrl);
+    if (!html) continue;
 
-  for (let page = 1; page <= lastPage; page++) {
-    const pageUrl = amazonBaseUrl.replace("page=1", `page=${page}`);
-    console.log(`Processing Amazon page ${page}...`);
-    const rawData = await fetchAmazonRawHTML(pageUrl);
+    const pageProducts = extractAmazonProductInfo(html);
+    allProducts.push(...pageProducts);
 
-    if (!rawData) continue;
-
-    const entries = rawData.split("&&&").map(p => {
-      try {
-        return JSON.parse(p);
-      } catch {
-        return null;
-      }
-    }).filter(Boolean);
-
-    for (const entry of entries) {
-      if (
-        Array.isArray(entry) &&
-        (entry[0] === "search-results" ||
-         entry[1]?.startsWith("data-main-slot:search-result-"))
-      ) {
-        const html = entry[2]?.html;
-        if (html) {
-          const pageProducts = extractAmazonProductInfo(html);
-          allProducts.push(...pageProducts);
-        }
-      }
-    }
-
-    await new Promise(r => setTimeout(r, 4000)); // Wait 1s to avoid throttling
+    // Randomized delay (3-7s)
+    const delay = Math.floor(Math.random() * 4000) + 3000;
+    console.log(`⏱ Waiting ${delay}ms before next page...`);
+    await new Promise(r => setTimeout(r, delay));
   }
 
-  const amazonOutput = "voucher_data_dump/amazon_voucher_data.json";
-  await fs.writeJson(amazonOutput, allProducts, { spaces: 4 });
-  console.log(`✅ Amazon data saved to ${amazonOutput}`);
+  const outputPath = "voucher_data_dump/amazon_voucher_data.json";
+  await fs.writeJson(outputPath, allProducts, { spaces: 4 });
+  console.log(`✅ Scraping completed. Saved to ${outputPath}`);
   return allProducts;
 }
+
 
 
 // ---------- MAXIMIZE MONEY SCRAPER ----------
