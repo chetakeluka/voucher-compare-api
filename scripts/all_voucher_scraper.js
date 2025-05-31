@@ -68,7 +68,8 @@ function extractAmazonProductInfo(htmlChunk) {
       discount_pct: discount,
       url,
       image_url: imgUrl,
-      sitename: "Amazon"
+      sitename: "Amazon",
+      InStock: true,
     });
   });
 
