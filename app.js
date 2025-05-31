@@ -37,16 +37,19 @@ function loadDataFromDirectory(directoryPath) {
 let allData = loadDataFromDirectory(directoryPath);
 
 // Run once on initialization
-(async () => {
-  console.log('[INIT] Running voucher scrapers...');
-  try {
-    await runVoucherScrapers();
-    allData = loadDataFromDirectory(directoryPath);
-    console.log('[INIT] Data scraped and loaded into memory.');
-  } catch (err) {
-    console.error('[INIT] Scraper failed:', err.message);
-  }
-})();
+// ignore for local
+if(process.env.ENVIRONMENT != "local"){
+    (async () => {
+    console.log('[INIT] Running voucher scrapers...');
+    try {
+        await runVoucherScrapers();
+        allData = loadDataFromDirectory(directoryPath);
+        console.log('[INIT] Data scraped and loaded into memory.');
+    } catch (err) {
+        console.error('[INIT] Scraper failed:', err.message);
+    }
+    })();
+}
 
 // Run script every 5 minutes
 cron.schedule('0 2 * * *', async () => {
@@ -63,7 +66,10 @@ cron.schedule('0 2 * * *', async () => {
 
 
 
-// Function to get the best discount based on user query
+function normalizeString(str) {
+    return str.toLowerCase().replace(/[^a-z0-9\s]/gi, ''); // remove punctuation
+}
+
 function getBestDiscount(data, searchName, minScoreThreshold = 50) {
     if (!data || data.length === 0) {
         return "Info: No data provided to search.";
@@ -72,8 +78,8 @@ function getBestDiscount(data, searchName, minScoreThreshold = 50) {
         return "Info: Search query is empty or invalid.";
     }
 
-    const cleanedSearchName = searchName.toLowerCase();
-    const names = data.map(item => item.name.toLowerCase());
+    const cleanedSearchName = normalizeString(searchName);
+    const names = data.map(item => normalizeString(item.name));
     const rawFuzzyResults = fuzzy.filter(cleanedSearchName, names);
 
     if (!rawFuzzyResults || rawFuzzyResults.length === 0) {
@@ -89,8 +95,14 @@ function getBestDiscount(data, searchName, minScoreThreshold = 50) {
 
     const relevantDataItems = goodQualityMatches.map(result => data[result.index]);
 
-    const bestDiscountItem = relevantDataItems.reduce((maxItem, currentItem) => {
-        return currentItem.discount_pct > maxItem.discount_pct ? currentItem : maxItem;
+    const bestDiscountItem = relevantDataItems.reduce((bestItem, currentItem) => {
+        if (currentItem.InStock && !bestItem.InStock) {
+            return currentItem;
+        } else if (currentItem.InStock === bestItem.InStock) {
+            return currentItem.discount_pct > bestItem.discount_pct ? currentItem : bestItem;
+        } else {
+            return bestItem;
+        }
     }, relevantDataItems[0]);
 
     return bestDiscountItem;
@@ -99,7 +111,8 @@ function getBestDiscount(data, searchName, minScoreThreshold = 50) {
 // API endpoint to handle user queries
 app.get('/best-voucher', (req, res) => {
     const query = req.query.query;
-
+    const ip = req.headers['x-forwarded-for'] || req.socket.remoteAddress;
+    console.log(`[app] [${ip}] got query for: `, query)
     if (!query) {
         return res.status(400).json({ message: 'Query parameter "query" is required' });
     }
